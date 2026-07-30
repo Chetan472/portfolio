@@ -1,0 +1,603 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chetan Teli | Full Stack Developer &amp; CSE Student</title>
+<meta name="description" content="Portfolio of Chetan Teli — Computer Science Engineering student and Full Stack Developer specializing in Java, Spring Boot, and modern web technologies.">
+<meta name="keywords" content="Chetan Teli, Full Stack Developer, Java Developer, Frontend Developer, Software Engineer, CSE Student Portfolio">
+<meta name="author" content="Chetan Teli">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Chetan Teli | Full Stack Developer">
+<meta property="og:description" content="Computer Science Engineering student and Full Stack Developer. Explore my projects, skills, and experience.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/og-cover.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236D5EFC'/%3E%3Cstop offset='1' stop-color='%23B34FF0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230B0F1E'/%3E%3Ctext x='50' y='68' font-size='54' font-family='monospace' font-weight='700' fill='url(%23g)' text-anchor='middle'%3ECT%3C/text%3E%3C/svg%3E">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS Animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">
+      <span>&lt;</span>Chetan<span class="dot">.</span>dev<span>/&gt;</span>
+    </div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loaderBarFill"></div>
+    </div>
+    <p class="loader-text" id="loaderText">compiling portfolio<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
+  </div>
+</div>
+
+<!-- ============ CURSOR GLOW ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>CT<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#internship" class="nav-link" data-section="internship">Internship</a></li>
+      <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+      <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO SECTION ============ -->
+<section class="hero" id="home">
+  <div id="particles-js" class="particles-bg"></div>
+  <div class="hero-shape shape-1"></div>
+  <div class="hero-shape shape-2"></div>
+  <div class="hero-shape shape-3"></div>
+
+  <div class="hero-container">
+    <div class="hero-text" data-aos="fade-right" data-aos-duration="900">
+      <p class="hero-eyebrow"><span class="status-dot"></span> Open to Software Engineering Roles</p>
+      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Chetan Teli</span></h1>
+      <div class="hero-role">
+        <span class="role-prefix">&gt;_</span>
+        <span id="typed-role"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc">Computer Science Engineering student who builds clean, reliable full‑stack applications — from Java backends to responsive, interactive interfaces.</p>
+
+      <div class="hero-buttons">
+        <a href="resume/Chetan_Teli_Resume.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:chetan.teli@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="900">
+      <div class="terminal-card">
+        <div class="terminal-titlebar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-filename">chetan_teli.java</span>
+        </div>
+        <div class="terminal-body">
+          <div class="code-line"><span class="ln">1</span><span class="tok-kw">public</span> <span class="tok-kw">class</span> <span class="tok-cls">Developer</span> {</div>
+          <div class="code-line"><span class="ln">2</span>&nbsp;&nbsp;<span class="tok-kw">private</span> String name = <span class="tok-str">"Chetan Teli"</span>;</div>
+          <div class="code-line"><span class="ln">3</span>&nbsp;&nbsp;<span class="tok-kw">private</span> String role = <span class="tok-str">"CSE Student"</span>;</div>
+          <div class="code-line"><span class="ln">4</span>&nbsp;&nbsp;<span class="tok-kw">private</span> <span class="tok-kw">double</span> cgpa = <span class="tok-num">9.25</span>;</div>
+          <div class="code-line"><span class="ln">5</span></div>
+          <div class="code-line"><span class="ln">6</span>&nbsp;&nbsp;<span class="tok-kw">public</span> String currentFocus() {</div>
+          <div class="code-line"><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-kw">return</span> <span class="tok-str">"Building full-stack apps"</span>;</div>
+          <div class="code-line"><span class="ln">8</span>&nbsp;&nbsp;}</div>
+          <div class="code-line"><span class="ln">9</span>}</div>
+        </div>
+        <div class="terminal-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">CT</div>
+          </div>
+          <div class="avatar-badge"><i class="fa-solid fa-code"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+    <span>Scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section class="about" id="about">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// about-me</p>
+      <h2>Getting to know <span class="gradient-text">me</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-visual" data-aos="fade-right">
+        <div class="about-frame">
+          <div class="about-frame-inner">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <div class="about-frame-glow"></div>
+        </div>
+        <div class="floating-icon icon-1"><i class="fa-brands fa-java"></i></div>
+        <div class="floating-icon icon-2"><i class="fa-brands fa-react"></i></div>
+        <div class="floating-icon icon-3"><i class="fa-solid fa-database"></i></div>
+      </div>
+
+      <div class="about-content" data-aos="fade-left">
+        <h3>Computer Science Engineering Student &amp; Full Stack Developer</h3>
+        <p>I'm a final-year Computer Science Engineering student graduating in 2026, currently holding a CGPA of 9.25. I enjoy turning ideas into working software — from designing clean interfaces to writing reliable backend logic in Java.</p>
+        <p>I'm a Java enthusiast at heart, a quick learner by necessity, and a problem solver by habit. Whether it's untangling a bug or picking up a new framework, I like getting to the "why" before the "how."</p>
+
+        <ul class="about-tags">
+          <li><i class="fa-solid fa-check"></i> Computer Science Engineering Student</li>
+          <li><i class="fa-solid fa-check"></i> CGPA 9.25 &middot; 2026 Graduate</li>
+          <li><i class="fa-solid fa-check"></i> Passionate Full Stack Developer</li>
+          <li><i class="fa-solid fa-check"></i> Java Enthusiast</li>
+          <li><i class="fa-solid fa-check"></i> Quick Learner</li>
+          <li><i class="fa-solid fa-check"></i> Problem Solver</li>
+        </ul>
+
+        <div class="about-stats">
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+            <span class="stat-number" data-count="1">0</span>
+            <span class="stat-label">Internship</span>
+          </div>
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+            <span class="stat-number" data-count="9.25" data-decimal="true">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS SECTION ============ -->
+<section class="skills" id="skills">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// tech-stack</p>
+      <h2>Skills &amp; <span class="gradient-text">Tools</span></h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-card-head"><i class="fa-solid fa-code"></i><h3>Programming</h3></div>
+        <div class="skill-bar-row"><span>Java</span><div class="bar-track"><div class="bar-fill" data-level="88"></div></div><span class="bar-pct">88%</span></div>
+        <div class="skill-bar-row"><span>Python</span><div class="bar-track"><div class="bar-fill" data-level="75"></div></div><span class="bar-pct">75%</span></div>
+        <div class="skill-bar-row"><span>JavaScript</span><div class="bar-track"><div class="bar-fill" data-level="80"></div></div><span class="bar-pct">80%</span></div>
+        <div class="skill-bar-row"><span>SQL</span><div class="bar-track"><div class="bar-fill" data-level="82"></div></div><span class="bar-pct">82%</span></div>
+      </div>
+
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-card-head"><i class="fa-solid fa-display"></i><h3>Frontend</h3></div>
+        <div class="skill-bar-row"><span>HTML</span><div class="bar-track"><div class="bar-fill" data-level="92"></div></div><span class="bar-pct">92%</span></div>
+        <div class="skill-bar-row"><span>CSS</span><div class="bar-track"><div class="bar-fill" data-level="88"></div></div><span class="bar-pct">88%</span></div>
+        <div class="skill-bar-row"><span>JavaScript</span><div class="bar-track"><div class="bar-fill" data-level="80"></div></div><span class="bar-pct">80%</span></div>
+        <div class="skill-bar-row"><span>React</span><div class="bar-track"><div class="bar-fill" data-level="65"></div></div><span class="bar-pct">65%</span></div>
+      </div>
+
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-card-head"><i class="fa-solid fa-server"></i><h3>Backend &amp; Database</h3></div>
+        <div class="skill-bar-row"><span>Spring Boot</span><div class="bar-track"><div class="bar-fill" data-level="60"></div></div><span class="bar-pct">Basics</span></div>
+        <div class="skill-bar-row"><span>MySQL</span><div class="bar-track"><div class="bar-fill" data-level="80"></div></div><span class="bar-pct">80%</span></div>
+        <div class="skill-bar-row"><span>Oracle</span><div class="bar-track"><div class="bar-fill" data-level="70"></div></div><span class="bar-pct">70%</span></div>
+      </div>
+
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="skill-card-head"><i class="fa-solid fa-toolbox"></i><h3>Tools</h3></div>
+        <div class="tool-chip-grid">
+          <span class="tool-chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="tool-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="tool-chip"><i class="fa-solid fa-code"></i> VS Code</span>
+          <span class="tool-chip"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="tool-chip"><i class="fa-brands fa-jira"></i> Jira</span>
+          <span class="tool-chip"><i class="fa-solid fa-cubes"></i> Maven</span>
+          <span class="tool-chip"><i class="fa-solid fa-cloud-sun"></i> Weather API</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS SECTION ============ -->
+<section class="projects" id="projects">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// selected-work</p>
+      <h2>Featured <span class="gradient-text">Projects</span></h2>
+    </div>
+
+    <div class="project-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="api">API Integration</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-category="web api" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" aria-label="View GitHub repository"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Weather Forecasting Web Application</h3>
+        <p>A responsive weather application built with HTML, CSS and JavaScript that fetches live conditions from the OpenWeatherMap API.</p>
+        <ul class="project-features">
+          <li>Real-time weather</li>
+          <li>Humidity &amp; wind speed</li>
+          <li>Temperature trends</li>
+          <li>OpenWeatherMap API</li>
+        </ul>
+        <div class="project-stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
+        <div class="project-card-top">
+          <div class="project-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" aria-label="View GitHub repository"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>AI Powered Finance Tracker</h3>
+        <p>A finance management application that tracks income and expenses and surfaces AI-generated spending insights on an interactive dashboard.</p>
+        <ul class="project-features">
+          <li>Income &amp; expense dashboard</li>
+          <li>Interactive charts</li>
+          <li>AI-generated insights</li>
+          <li>Fully responsive</li>
+        </ul>
+        <div class="project-stack">
+          <span>JavaScript</span><span>Chart.js</span><span>AI Insights</span><span>Responsive UI</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION SECTION ============ -->
+<section class="education" id="education">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// academics</p>
+      <h2>Education <span class="gradient-text">Timeline</span></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2022 &ndash; 2026</span>
+          <h3>Bachelor of Engineering, Computer Science</h3>
+          <p>KLS Gogte Institute of Technology</p>
+          <span class="timeline-badge">CGPA 9.25</span>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">12th Standard</span>
+          <h3>Higher Secondary Education</h3>
+          <p>Science Stream</p>
+          <span class="timeline-badge">92.8%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">10th Standard</span>
+          <h3>Secondary School Education</h3>
+          <p>State Board</p>
+          <span class="timeline-badge">84.8%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERNSHIP SECTION ============ -->
+<section class="internship" id="internship">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// experience</p>
+      <h2>Internship <span class="gradient-text">Experience</span></h2>
+    </div>
+
+    <div class="internship-card" data-aos="zoom-in">
+      <div class="internship-icon"><i class="fa-solid fa-briefcase"></i></div>
+      <div class="internship-info">
+        <h3>Full Stack Development Intern</h3>
+        <p class="internship-company">SuprMentor Technologies</p>
+        <p class="internship-duration"><i class="fa-regular fa-calendar"></i> February 2026 &ndash; June 2026</p>
+        <p class="internship-desc">Worked across the stack building and maintaining web features, collaborating with a small engineering team on real production tasks — from UI components to backend logic and bug fixes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES SECTION ============ -->
+<section class="certificates" id="certificates">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// credentials</p>
+      <h2>Certificates &amp; <span class="gradient-text">Courses</span></h2>
+    </div>
+
+    <div class="certificates-grid">
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+        <h3>NPTEL IoT</h3>
+        <p>Internet of Things fundamentals and applications</p>
+        <button class="btn btn-sm btn-outline view-cert-btn">View Certificate</button>
+      </div>
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+        <h3>Cloud Computing</h3>
+        <p>Core concepts of cloud infrastructure and services</p>
+        <button class="btn btn-sm btn-outline view-cert-btn">View Certificate</button>
+      </div>
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+        <h3>Java Programming</h3>
+        <p>Core &amp; object-oriented Java programming</p>
+        <button class="btn btn-sm btn-outline view-cert-btn">View Certificate</button>
+      </div>
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="cert-icon"><i class="fa-solid fa-chart-simple"></i></div>
+        <h3>SQL for Data Analysis</h3>
+        <p>Querying and analyzing relational data with SQL</p>
+        <button class="btn btn-sm btn-outline view-cert-btn">View Certificate</button>
+      </div>
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="cert-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>Java Full Stack Development</h3>
+        <p>End-to-end full stack development using Java</p>
+        <button class="btn btn-sm btn-outline view-cert-btn">View Certificate</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-content">
+    <button class="cert-modal-close" id="certModalClose" aria-label="Close">&times;</button>
+    <div class="cert-modal-body">
+      <i class="fa-solid fa-file-certificate"></i>
+      <h3 id="certModalTitle">Certificate</h3>
+      <p>Add your scanned certificate or credential link here to display it in this preview.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RESUME SECTION ============ -->
+<section class="resume" id="resume">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// cv</p>
+      <h2>My <span class="gradient-text">Resume</span></h2>
+    </div>
+
+    <div class="resume-card" data-aos="zoom-in">
+      <div class="resume-preview">
+        <i class="fa-solid fa-file-lines"></i>
+        <div class="resume-preview-lines">
+          <span></span><span></span><span class="short"></span>
+          <span></span><span class="short"></span><span></span>
+        </div>
+      </div>
+      <div class="resume-info">
+        <h3>Chetan Teli</h3>
+        <p>Full Stack Developer &middot; Computer Science Engineering Student</p>
+        <p class="resume-updated"><i class="fa-regular fa-clock"></i> Last updated 2026</p>
+        <a href="resume/Chetan_Teli_Resume.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section class="contact" id="contact">
+  <div class="section-container">
+    <div class="section-heading" data-aos="fade-up">
+      <p class="section-eyebrow">// get-in-touch</p>
+      <h2>Let's <span class="gradient-text">Connect</span></h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <p class="contact-lead">Have a role, project, or question in mind? My inbox is open — I read and reply to every message.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><span>Location</span><p>Bengaluru, India</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><span>Email</span><p>chetan.teli@example.com</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><span>Phone</span><p>+91 00000 00000</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+          <div><span>GitHub</span><p>github.com/chetanteli</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div><span>LinkedIn</span><p>linkedin.com/in/chetanteli</p></div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://maps.google.com/maps?q=Bengaluru%2C%20Karnataka&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Bengaluru location map"></iframe>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="from_name" placeholder="Your full name" required>
+            <span class="form-error" data-for="cf-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="from_email" placeholder="you@example.com" required>
+            <span class="form-error" data-for="cf-email"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" required>
+          <span class="form-error" data-for="cf-subject"></span>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a little about your project or opportunity..." required></textarea>
+          <span class="form-error" data-for="cf-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="cfSubmit">
+          <span class="btn-label"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+          <span class="btn-loading"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOAST NOTIFICATION ============ -->
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check toast-icon"></i>
+  <div>
+    <p class="toast-title">Message sent</p>
+    <p class="toast-msg" id="toastMsg">Thanks for reaching out — I'll reply soon.</p>
+  </div>
+  <button class="toast-close" id="toastClose" aria-label="Dismiss">&times;</button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>CT<span class="logo-bracket">/&gt;</span></a>
+      <p>Building clean, reliable software — one commit at a time.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <h4>Find Me</h4>
+      <div class="footer-social-icons">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:chetan.teli@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Chetan Teli. Designed &amp; Developed by Chetan Teli.</p>
+  </div>
+</footer>
+
+<!-- ============ SCROLL TO TOP ============ -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
