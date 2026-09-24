@@ -134,7 +134,6 @@ You can also use the Live Server extension in Visual Studio Code for a better de
 ## Contact
 
 - GitHub: [Chetan472](https://github.com/Chetan472)
-- LinkedIn: [Chetan Teli](https://linkedin.com/chetan9353)
 - Email: [chetanteli75@gmail.com](mailto:chetanteli75@gmail.com)
 
 ## License
